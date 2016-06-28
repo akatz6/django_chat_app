@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	{% if chat_list %}</pre>
+	<ul>
+		<ul>{% for chat in chat_list %}</ul>
+	</ul>
+	<ul>
+		<ul>
+			<li><a id="" href="{% url 'chat_room' chat.id %}"> {{ chat.name }}</a></li>
+		</ul>
+	</ul>
+	<ul>{% endfor %}</ul>
+	<pre>
+		
+		
+		
+		{% else %}
+		
+		No chats are available.
+		
+		{% endif %}
+
+	</body>
+	</html>
